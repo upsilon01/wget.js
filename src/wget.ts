@@ -3,7 +3,7 @@ import path from "path";
 import { Parser } from "./parser";
 
 export class Wget {
-    private _command = "wget"
+    private _command = "wget.exe"
     private _params: Record<string, string | number> = {};
     private _flags: string[] = [];
     private _url: string = '';
@@ -58,7 +58,7 @@ export class Wget {
     private createCommand(): string {
         const flags = this._flags.join(' ');
         const params = Object.keys(this._params).reduce((acc,c) => acc + c + ' ' + this._params[c] + ' ' , '');
-        return [this._command, flags , params, this._url].join(' ');
+        return [path.join('..', 'bin', this._command), flags , params, this._url].join(' ');
 
     }
 

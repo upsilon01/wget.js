@@ -1,10 +1,11 @@
 {
   "name": "wget-wrapper",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Wget wrapper for node.js",
   "main": "dist/index.js",
   "files": [
-    "bin"
+    "bin",
+    "dist"
   ],
   "scripts": {
     "build": "tsc",
