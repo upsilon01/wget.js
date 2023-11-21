@@ -1,0 +1,1 @@
+export { wget, Wget } from './wget';

@@ -1,0 +1,31 @@
+{
+  "name": "wget-wrapper",
+  "version": "1.0.0",
+  "description": "Wget wrapper for node.js",
+  "main": "dist/index.js",
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node ./tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/upsilon01/wget.js.git"
+  },
+  "keywords": [
+    "wget",
+    "download"
+  ],
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/upsilon01/wget.js/issues"
+  },
+  "homepage": "https://github.com/upsilon01/wget.js#readme",
+  "devDependencies": {
+    "@types/node": "^20.9.3",
+    "typescript": "^5.3.2"
+  }
+}
